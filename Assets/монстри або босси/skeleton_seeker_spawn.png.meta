@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: da23384d91700af44b521f23a6f59602
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1208
+        width: 47
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5342299, y: 0.4883423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2cd86ae4b306b4088150b2c9f00652
+      internalID: -259950061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1087
+        width: 96
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5558614, y: 0.47855225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9491d4554c497c46a64314517ffc5dc
+      internalID: -1968979351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 964
+        width: 99
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5433348, y: 0.51011914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc1585d052080b4a964b5790521ed67
+      internalID: 1027344146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 839
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.531239, y: 0.48350078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87076d71eaadd4c448a5ecb3fd78a72f
+      internalID: 1126217645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 716
+        width: 102
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5315452, y: 0.5418968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8eb240cc59c894d9baa32a368fbf06
+      internalID: 1500383751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 610
+        width: 92
+        height: 44
+      alignment: 9
+      pivot: {x: 0.564119, y: 0.48781377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215d191c63132f54d9bb02099bda2fac
+      internalID: -203428156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 488
+        width: 98
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5273607, y: 0.52726823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8a1d312fbe801499d95e7cec391a99
+      internalID: -457810106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 368
+        width: 90
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5476683, y: 0.5987866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d86a7300ce110e4085269666bd0e1de
+      internalID: -436646426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 246
+        width: 93
+        height: 84
+      alignment: 9
+      pivot: {x: 0.60379374, y: 0.717061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c70e49f5b8b67d4fb45898d2e7a6de4
+      internalID: -554479433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 130
+        width: 93
+        height: 92
+      alignment: 9
+      pivot: {x: 0.61532634, y: 0.7856208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4b974d3752a004abbb7570d74928c6
+      internalID: -1867252823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_seeker_spawn_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 96
+        height: 99
+      alignment: 9
+      pivot: {x: 0.6228946, y: 0.7437583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecddb40106c2c44a967a2e9d8ff5b03
+      internalID: -1261778196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skeleton_seeker_spawn_0: -259950061
+      skeleton_seeker_spawn_1: -1968979351
+      skeleton_seeker_spawn_10: -1261778196
+      skeleton_seeker_spawn_2: 1027344146
+      skeleton_seeker_spawn_3: 1126217645
+      skeleton_seeker_spawn_4: 1500383751
+      skeleton_seeker_spawn_5: -203428156
+      skeleton_seeker_spawn_6: -457810106
+      skeleton_seeker_spawn_7: -436646426
+      skeleton_seeker_spawn_8: -554479433
+      skeleton_seeker_spawn_9: -1867252823
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

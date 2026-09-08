@@ -1,0 +1,4351 @@
+fileFormatVersion: 2
+guid: 5d009129408ae1249955dfdc2f42b59a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Soldier-Red_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25697f6d5cec1842a69b338c021054d
+      internalID: 1102139704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 233
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0647ea56d514f69439cf664db757fb20
+      internalID: -1348689543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 232
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eac742760267c428249bd5f93cb3a6
+      internalID: -258831899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 232
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0847c1ab53f4e6a48a0bfb99f8d4cc06
+      internalID: 1043977802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 233
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91fb59dc03eee04b84b9c15c83c7d21
+      internalID: -440301959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 233
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac308b10eef780499af661bbbbe4026
+      internalID: 956069313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 232
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2b0045708593340930175308584f89
+      internalID: -1211479255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 233
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c162f4f2eb12e3b4e95b000f1acf42df
+      internalID: -1361566715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 232
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1fcc7d247d6e0429106c66c8730c9a
+      internalID: 649301586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 232
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45c65f9301053642a7d4991158f0147
+      internalID: -1220640457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_10
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 232
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a551069cd84e30498e533e31c628add
+      internalID: 1384790056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 233
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15bdd776811f444388e8ba11932b1c5
+      internalID: 1765148042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 233
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9b81ad4758d934da85aafca417a7cd
+      internalID: -403008368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_13
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 233
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3e1b111cb53e943b72bc1667c933ed
+      internalID: 233334710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_14
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 229
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dacc63e7af1a642a477a6f55fcb3f7
+      internalID: -1897661183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 233
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3a6a83fdb23494485d038b9749789f
+      internalID: 1028387979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_16
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 233
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6795d7a6d13f5634182df79d39a2b5f1
+      internalID: 994691933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_17
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 233
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f61630b491c61647952c5a24020f060
+      internalID: -1541391692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_18
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 233
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb843c7939a2034783da923bcea3d72
+      internalID: 1034720549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 234
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee72189d5f13a64e892e18e990aae99
+      internalID: 2134882733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_20
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 233
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b7e7f3c35ca194c9619dd33de4c832
+      internalID: -1655016463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 233
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b9d5ededea2a942b3131adf8786230
+      internalID: -1228884274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_22
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 233
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e17bddbdccc2e84da3f50d6bc005fd0
+      internalID: 1203081189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_23
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 233
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ad5654195251e41b0457014881e2b7
+      internalID: 286593207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_24
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 201
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a756e501a6fd2424aa15753aa1bf9344
+      internalID: -397229392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_25
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 201
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489692dd53a17f148b8691e559fdcabe
+      internalID: -1179605980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_26
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 200
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81950b8e895810244ad43f53929b4b22
+      internalID: 781865885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_27
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 200
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9de3b6ea19fa074d97f64e3e3d5e077
+      internalID: 286739001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 201
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df2bd738aaa52c43acd254a49c58d90
+      internalID: -1633898268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 201
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddaaef8616fde14b84c7319bd13d4d3
+      internalID: -1802579019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_30
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9e075b7e9eed841ba05264f8f41f29
+      internalID: -1244208998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_31
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 201
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282e63637c2efd647b097b6f30a4286c
+      internalID: -1005162699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_32
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 201
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce003cc77d501d246857706d95c6cfd9
+      internalID: 1801772748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_33
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 200
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45c6b0e5ba186943aa8182a7517b0a7
+      internalID: -1635014902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_34
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 200
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433818d683dbc77419f9816868b44810
+      internalID: -919783841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_35
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 201
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f610d136bd7f3498003181b81051ce
+      internalID: 318946740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_36
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 201
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61347e95ba477d745919859854a6f171
+      internalID: 946109841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_37
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 201
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3cc89b1ca17324e8a312e35156ce92
+      internalID: -984329827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_38
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c096d19fe9a7743bf2ee0a6aec53bb
+      internalID: -194652254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_39
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 201
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7f994369673dc4baf373a5af643c44
+      internalID: 25427729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_40
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 201
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b4a5dc839337a4bae94650a7a391b8
+      internalID: 1368305721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_41
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 201
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7602842c8339e0f4483c9287b14a5fd2
+      internalID: 636343516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_42
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 201
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f1fa63e7989eb498d6c4f3ec17928d
+      internalID: -1717404819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_43
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 202
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eea9240b3212da4d8c8cf0823037fe4
+      internalID: 766331102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_44
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 201
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fde3e27f35c3464f916b12cf49738bd
+      internalID: -552992348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_45
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 201
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb13c71df7b9544cb7cc25217c067a0
+      internalID: 1842465857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_46
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 201
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975b7f2927107194dbce829c21e7d3a4
+      internalID: 2001454028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_47
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 201
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0715efc6e0873147b2bc0c69c88294f
+      internalID: 440855176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_48
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 169
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a58607e3d896e344b6e4bb4278aebf8
+      internalID: -2381579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_49
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be776ed77a9781f46b4c80e45b662da7
+      internalID: 1362041779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_50
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 168
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea3dfa49db3a2741bceaf77d9a1f1e5
+      internalID: 203675286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_51
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 168
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8416015620f8eb14f9ee73a5324a5c07
+      internalID: 1303890618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_52
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10047cd45c91e6840a8d100025010a18
+      internalID: 1095151418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_53
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1f7fe797f957446bd2d819f8c94a66
+      internalID: -1154065967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_54
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 169
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18a99899283fac4e875d9b6703752f4
+      internalID: 761288132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_55
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 169
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2755484aa0bcb438656d9f31edc8a3
+      internalID: -804233023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_56
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 169
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6300bd5ef8cbd24cb5e9c00fa163726
+      internalID: 1009214785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_57
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 169
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56cc3fb6ff02db499e44b04caa004df
+      internalID: -740488720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_58
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 169
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dfbeeed6c71d144ba546b36f9ec42b
+      internalID: 617047819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_59
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 169
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aac8a6738830d34aa604d1024459228
+      internalID: 1795089935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_60
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7f3df0ed0c0de46a6cf1e0ec8191a4
+      internalID: 235243210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_61
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bfeba8d49c7b9448a5e2aa8818dbb1
+      internalID: 2111489746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_62
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 169
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7f5e6a2be3dc64f858681152246a62
+      internalID: 1161762014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_63
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c490a673141f14b8c04601675c1ca6
+      internalID: 864179698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_64
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10075dc947bff0f4f9dc11417c55e0e8
+      internalID: -75775819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_65
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 169
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e342611bb872d4ab9073586fafb775
+      internalID: -2074163503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_66
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5a6cc3bdc2cc04e985ac02be063fa6
+      internalID: -568682469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_67
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 169
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7d165f0f60fc44cb0c24fd8fdea249
+      internalID: 82343391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_68
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 169
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f55687fa7eecf44baadbeae78128a5f
+      internalID: -177382921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_69
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 169
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ad83f0133ba854eae6419f0769a291
+      internalID: -1388824638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_70
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 167
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430ea11ce0ac3f74d8fc4069bfe0bf43
+      internalID: -1207515112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_71
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 168
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c5b87ee24bf3945896ed73cfe3d451
+      internalID: 507130671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_72
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 137
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a86c50a9c8a0f8489c5078775033a6a
+      internalID: 39691595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_73
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864919d59d85e0b4a95f0251294be2e4
+      internalID: 2883209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_74
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 136
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55f4904212d11b4593ffd5bfb4827cd
+      internalID: 228771630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_75
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 136
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8536b1903fb4f744e98e4ef921043825
+      internalID: 137077071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_76
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca0900fe3c374b4a8f7bd67eda5c3af
+      internalID: -1598812779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_77
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f54c326719f255499240dc74a2bd2c7
+      internalID: -2104105930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_78
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 137
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb407ba76ac89544a51b5d9d7b80c4f
+      internalID: -418802337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_79
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd28b5629f3a5d4b9df4410ae9ed695
+      internalID: -213702334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_80
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 137
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbb19ad11d4bc34ea0f0d2812dbd0b0
+      internalID: -1497027281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_81
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 137
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40159bd445272fd4387de306edfbe4d3
+      internalID: -1475446695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_82
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 137
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043899a9eab1b9a489d3af3c6a257e0e
+      internalID: 2107990416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_83
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 137
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c470027c38d7f4dbb5b149b21d35a4
+      internalID: 512275923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_84
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7de71d84c56faf469f0d784fd168f79
+      internalID: 53005820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_85
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0336af124b3ff4fa956958996acc76
+      internalID: -1183894570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_86
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 137
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ba7dc2d7675eb48b828343cce0ce96
+      internalID: 133344369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_87
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5c44b109c545f4b9317d0fb25f98cc
+      internalID: -632779321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_88
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a198bc8334845c43b99fbe36055d5d0
+      internalID: -1866390542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_89
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 137
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9422a2a7687fdef43aa113558aafef69
+      internalID: 206345484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_90
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e93274fe694b54eaca7f07a4ba4100
+      internalID: 1094881118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_91
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 136
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa26242bb7e04e418c1d8a26f93669f
+      internalID: -650132998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_92
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 137
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a04b49910d8018488ecd617e1af2f7a
+      internalID: 1165323478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_93
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 137
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71942a7d915a7984595e6f3d3f7fdde6
+      internalID: 998713696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_94
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 133
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd30450b9bedc4a4cb7e937f91b5a43b
+      internalID: -2140958925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_95
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 134
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce5c5651f144da4788b15dbf5546eaf
+      internalID: 1739547973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_96
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f66b292a3f96434fad9d886c24849a8
+      internalID: -1904353888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_97
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 105
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81172d86a0b0c854bb5281d1bf96e3bb
+      internalID: 423186182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_98
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 104
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b38b6df27ff8b46b9e67be583ee6e8
+      internalID: -693904041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_99
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 104
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81070f73cb7c9d448c5ef8dbf881167
+      internalID: 1439085584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_100
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 105
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581141f675faf23489f670b90cbdb52d
+      internalID: -1849331954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_101
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 105
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ad45d9d721b984ab53ec80709f836d
+      internalID: -565615318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_102
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 105
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabd7d0f819ccd243afc98d24788f061
+      internalID: -1946164968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_103
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 105
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f53dfcf2e807242ace6ac923c5a5aa
+      internalID: -877099587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_104
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 105
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7227b4aafd330824aab734a0e5a6b775
+      internalID: 262711224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_105
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 105
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663f2afcd8cf72043ab37e6112485662
+      internalID: 1283250485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_106
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 105
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74a5a34fbd93184b9a27fec96fc7152
+      internalID: 1369999855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_107
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 105
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e492dd9e861e84fb2899e89c3ca91d
+      internalID: 2109248369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_108
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 105
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d7582f805606443925fc701c4464c1
+      internalID: 454817568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_109
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 105
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cceb62395625f3741a9ec0e267ca01f6
+      internalID: -1514311550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_110
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 105
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed8e7bf05bb97f4ea27cf51f8c52481
+      internalID: 1992703810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_111
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 105
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6dbdf652a539c49ae950caf53a75d3
+      internalID: -551773170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_112
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 105
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6103211ed9436264ab8ea5db55390272
+      internalID: -224165076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_113
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 105
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14cb5a9bbf155244be645252f923e2a
+      internalID: -261971141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_114
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 105
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7293ad26b90449e438bab3380585df6e
+      internalID: 1386823511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_115
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 104
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92efd18ff8f5d3a4786c4c7aa1bacf8b
+      internalID: 789749067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_116
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 105
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acf64f5481e6a0489ba916382d3f165
+      internalID: 115626241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_117
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 105
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d09e34c8c9b104f8998b2b27aee8ab
+      internalID: 1901317882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_118
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 100
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501f431aef23a0f469179fa3f81fd725
+      internalID: -347406610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_119
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 101
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b1b4281d14c7a439191aa08ba73cb7
+      internalID: 1913497952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_120
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 73
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916a73d7f475fa44d8b9bd93859cd900
+      internalID: 1159103131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_121
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbf9a48e20be4e4eb29b47b359ac55f
+      internalID: 253839368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_122
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 72
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59beb6f78f3dff84783729a6dfc48db5
+      internalID: -1419934121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_123
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d818b82800d4cf845a5b144bf052261d
+      internalID: -1907479297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_124
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aca8b8a0ec079b47a343d6336dec639
+      internalID: -1374423616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_125
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35998d11996e3aa409aa189a98a2c836
+      internalID: 1639329159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_126
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 73
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9ec358f8929fd40b744757f1ea553b
+      internalID: 2032274349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_127
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b1925c13cbefd4a9ce76e2821ae58b
+      internalID: -1282863464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_128
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 73
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8d17955399abe4f8ab7cd834af66ef
+      internalID: -1391173148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_129
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 73
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8b1c8b629bb5f47b50190914e88fc2
+      internalID: -1264688226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_130
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 73
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c61fa4eb599f3418d4d05f1658d51d
+      internalID: 1005469361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_131
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 73
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b99af0f6e417244aaccdc5f95057aa9
+      internalID: 198200435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_132
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c078dc8a0d1774f9374a972a0fb3dd
+      internalID: 1307564577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_133
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffba3ebf7e1683842b38cc7cd61261cf
+      internalID: -1065742381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_134
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 73
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db0a6c65065c5b498efabf8d3b76a86
+      internalID: 763459016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_135
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112fc5984a87f524595a9219794381ff
+      internalID: -1089836185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_136
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41bd415f575f8d40aebea27aec23ce9
+      internalID: -689591974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_137
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 73
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbe64f4258072b4e9d836bd41f097cf
+      internalID: -2039968449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_138
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672c9f72d7b1dd04883cbad6ff9de5f4
+      internalID: -285176420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_139
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 72
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed1a6315326ce844904201b29879745
+      internalID: 1428286009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_140
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 73
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14d7db0e171b6d4fa05737ca8ff168d
+      internalID: 1073340740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_141
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 73
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7181a4eed98911a4488ad9eaa3af0f0c
+      internalID: 183089608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_142
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 67
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56c6525d90b0ad49ad26075dcc835ed
+      internalID: 1735436425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_143
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 68
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af70a457db18d9043ad5d7d2a322f964
+      internalID: -122092454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_144
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 41
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae737652743e7c746bba950097ef1e7a
+      internalID: -705234286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_145
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae5fad452a75c44d832e4c861745c90
+      internalID: -33892848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_146
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 40
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c34c93feb69da47bf7a4e8976a2656
+      internalID: 2120760997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_147
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 40
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7194d263e014a45498941ee3cec793f9
+      internalID: 1470117540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_148
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ea3fa64bf699e4887d9b5b49243b6b
+      internalID: -1421734633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_149
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddece6318f54f34cb6dfbf03d72c3d7
+      internalID: -1906118288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_150
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84dab405d7bb9d4a8e0e4a2a1aa8798
+      internalID: 2067523241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_151
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c94dcdb826e5746a9f9bb9778a41c9
+      internalID: 2030786510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_152
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 41
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a6beb9107cbd7439e53782b639b888
+      internalID: 170001656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_153
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 41
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95397e4ecffdfdc49a2e71a9ae09aac5
+      internalID: -774444042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_154
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641c19a4e7845c449bb4dc6b15c9b175
+      internalID: -182674908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_155
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 41
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da185a65315afd42a409e25d8e40bf6
+      internalID: -792590992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_156
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fdc9552c45ff34492d0c92f1d1afdb
+      internalID: 2032676970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_157
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e739c302926314ead786e66f4dccce
+      internalID: 1025186907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_158
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f82309cf0e26245b535a2041abae73
+      internalID: -1976278163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_159
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ad204ba3b1f9245b1f410fe0cd8c69
+      internalID: -1967685286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_160
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390dd195cb4f89544876f4a7d5ddb5ee
+      internalID: -298049646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_161
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 41
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f66e46a5afebf4ca2db9955712dad8
+      internalID: 1947623215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_162
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970472f295ee42a49b9f2905f59c2dc0
+      internalID: -1389559250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_163
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 41
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8a02cf186134f4ba66e7cbbc008fe4
+      internalID: -1354208940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_164
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 41
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e156565d533154d9479afb364a947c
+      internalID: -1285368811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_165
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 41
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f99cdf4e66cd2f479cc76916fd06e20
+      internalID: 851108802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_166
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 39
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9276cf0ee7a3118459ffdd0b4f38acee
+      internalID: 1241659718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_167
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 40
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb51c54a369c38469bd3c8e07c6813f
+      internalID: 691766968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_168
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29cbcf4fa5375e4e87fd18051a16272
+      internalID: 2064736366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_169
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 9
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ac34d4ee3d8d04390ac4c78a4dcd62
+      internalID: 1070631613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_170
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 8
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cb76688a74fb3478cfd6182343932b
+      internalID: 1207049083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_171
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 8
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd4697e2a9c6ba46862c0d40850e0bd
+      internalID: 1256042805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_172
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 9
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a758247a17e9c0a43ae9bdae4de9a2e1
+      internalID: -1452248928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_173
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 9
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22db117a4bdf77147bdf46a70880d8a2
+      internalID: -1557950195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_174
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 9
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338234eac1f8c8f499efa1b37ab3e8e6
+      internalID: -647247815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_175
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 9
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3580523419aec0646b5bc3d65b7b644b
+      internalID: 947897037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_176
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 9
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb8d6ce7bff0bc4bbcf26a934f5558a
+      internalID: 883549826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_177
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 8
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6a6943dedc0f24f9b8d74ee9985e94
+      internalID: 947655407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_178
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 8
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc503287a1e80c40833443ed53ae6f3
+      internalID: 536346265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_179
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 8
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d1c308a21862b4090b337382ec6aaa
+      internalID: 1001383223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_180
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 9
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7d31e1c153218479d245f18ba92563
+      internalID: 100602829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_181
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 9
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6312e4df2b766514389001e6f71faab3
+      internalID: -1825286804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_182
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 8
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51cee25b161dec45bd094ad10f8b06a
+      internalID: -1694497800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_183
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 9
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075a461e463633843b51dac9dee136b3
+      internalID: -1327648154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_184
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 9
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d030d342d42ffb4fafba4c8315353c7
+      internalID: -65357202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_185
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2e227a7eb7fe94095e83a24e43905e
+      internalID: -1623146153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_186
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 9
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b83d0ff8aa117440afe5b70f3815f23
+      internalID: 1208761226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_187
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 10
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b5bef71df5ccd47b923a3368469492
+      internalID: 272058786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_188
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 9
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64496c8a6f012b4e983d12f274702d6
+      internalID: -1797559903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_189
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 9
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1e9156d1077ae4583b019bc63f36ea
+      internalID: -1828373662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_190
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 9
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c83878e3773a984ea00893fb4ffe01a
+      internalID: -1147329057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldier-Red_191
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 9
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1c8720d12178b49be4e3110bb37aaf
+      internalID: 1537692593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Soldier-Red_0: 1102139704
+      Soldier-Red_1: -1348689543
+      Soldier-Red_10: 1384790056
+      Soldier-Red_100: -1849331954
+      Soldier-Red_101: -565615318
+      Soldier-Red_102: -1946164968
+      Soldier-Red_103: -877099587
+      Soldier-Red_104: 262711224
+      Soldier-Red_105: 1283250485
+      Soldier-Red_106: 1369999855
+      Soldier-Red_107: 2109248369
+      Soldier-Red_108: 454817568
+      Soldier-Red_109: -1514311550
+      Soldier-Red_11: 1765148042
+      Soldier-Red_110: 1992703810
+      Soldier-Red_111: -551773170
+      Soldier-Red_112: -224165076
+      Soldier-Red_113: -261971141
+      Soldier-Red_114: 1386823511
+      Soldier-Red_115: 789749067
+      Soldier-Red_116: 115626241
+      Soldier-Red_117: 1901317882
+      Soldier-Red_118: -347406610
+      Soldier-Red_119: 1913497952
+      Soldier-Red_12: -403008368
+      Soldier-Red_120: 1159103131
+      Soldier-Red_121: 253839368
+      Soldier-Red_122: -1419934121
+      Soldier-Red_123: -1907479297
+      Soldier-Red_124: -1374423616
+      Soldier-Red_125: 1639329159
+      Soldier-Red_126: 2032274349
+      Soldier-Red_127: -1282863464
+      Soldier-Red_128: -1391173148
+      Soldier-Red_129: -1264688226
+      Soldier-Red_13: 233334710
+      Soldier-Red_130: 1005469361
+      Soldier-Red_131: 198200435
+      Soldier-Red_132: 1307564577
+      Soldier-Red_133: -1065742381
+      Soldier-Red_134: 763459016
+      Soldier-Red_135: -1089836185
+      Soldier-Red_136: -689591974
+      Soldier-Red_137: -2039968449
+      Soldier-Red_138: -285176420
+      Soldier-Red_139: 1428286009
+      Soldier-Red_14: -1897661183
+      Soldier-Red_140: 1073340740
+      Soldier-Red_141: 183089608
+      Soldier-Red_142: 1735436425
+      Soldier-Red_143: -122092454
+      Soldier-Red_144: -705234286
+      Soldier-Red_145: -33892848
+      Soldier-Red_146: 2120760997
+      Soldier-Red_147: 1470117540
+      Soldier-Red_148: -1421734633
+      Soldier-Red_149: -1906118288
+      Soldier-Red_15: 1028387979
+      Soldier-Red_150: 2067523241
+      Soldier-Red_151: 2030786510
+      Soldier-Red_152: 170001656
+      Soldier-Red_153: -774444042
+      Soldier-Red_154: -182674908
+      Soldier-Red_155: -792590992
+      Soldier-Red_156: 2032676970
+      Soldier-Red_157: 1025186907
+      Soldier-Red_158: -1976278163
+      Soldier-Red_159: -1967685286
+      Soldier-Red_16: 994691933
+      Soldier-Red_160: -298049646
+      Soldier-Red_161: 1947623215
+      Soldier-Red_162: -1389559250
+      Soldier-Red_163: -1354208940
+      Soldier-Red_164: -1285368811
+      Soldier-Red_165: 851108802
+      Soldier-Red_166: 1241659718
+      Soldier-Red_167: 691766968
+      Soldier-Red_168: 2064736366
+      Soldier-Red_169: 1070631613
+      Soldier-Red_17: -1541391692
+      Soldier-Red_170: 1207049083
+      Soldier-Red_171: 1256042805
+      Soldier-Red_172: -1452248928
+      Soldier-Red_173: -1557950195
+      Soldier-Red_174: -647247815
+      Soldier-Red_175: 947897037
+      Soldier-Red_176: 883549826
+      Soldier-Red_177: 947655407
+      Soldier-Red_178: 536346265
+      Soldier-Red_179: 1001383223
+      Soldier-Red_18: 1034720549
+      Soldier-Red_180: 100602829
+      Soldier-Red_181: -1825286804
+      Soldier-Red_182: -1694497800
+      Soldier-Red_183: -1327648154
+      Soldier-Red_184: -65357202
+      Soldier-Red_185: -1623146153
+      Soldier-Red_186: 1208761226
+      Soldier-Red_187: 272058786
+      Soldier-Red_188: -1797559903
+      Soldier-Red_189: -1828373662
+      Soldier-Red_19: 2134882733
+      Soldier-Red_190: -1147329057
+      Soldier-Red_191: 1537692593
+      Soldier-Red_2: -258831899
+      Soldier-Red_20: -1655016463
+      Soldier-Red_21: -1228884274
+      Soldier-Red_22: 1203081189
+      Soldier-Red_23: 286593207
+      Soldier-Red_24: -397229392
+      Soldier-Red_25: -1179605980
+      Soldier-Red_26: 781865885
+      Soldier-Red_27: 286739001
+      Soldier-Red_28: -1633898268
+      Soldier-Red_29: -1802579019
+      Soldier-Red_3: 1043977802
+      Soldier-Red_30: -1244208998
+      Soldier-Red_31: -1005162699
+      Soldier-Red_32: 1801772748
+      Soldier-Red_33: -1635014902
+      Soldier-Red_34: -919783841
+      Soldier-Red_35: 318946740
+      Soldier-Red_36: 946109841
+      Soldier-Red_37: -984329827
+      Soldier-Red_38: -194652254
+      Soldier-Red_39: 25427729
+      Soldier-Red_4: -440301959
+      Soldier-Red_40: 1368305721
+      Soldier-Red_41: 636343516
+      Soldier-Red_42: -1717404819
+      Soldier-Red_43: 766331102
+      Soldier-Red_44: -552992348
+      Soldier-Red_45: 1842465857
+      Soldier-Red_46: 2001454028
+      Soldier-Red_47: 440855176
+      Soldier-Red_48: -2381579
+      Soldier-Red_49: 1362041779
+      Soldier-Red_5: 956069313
+      Soldier-Red_50: 203675286
+      Soldier-Red_51: 1303890618
+      Soldier-Red_52: 1095151418
+      Soldier-Red_53: -1154065967
+      Soldier-Red_54: 761288132
+      Soldier-Red_55: -804233023
+      Soldier-Red_56: 1009214785
+      Soldier-Red_57: -740488720
+      Soldier-Red_58: 617047819
+      Soldier-Red_59: 1795089935
+      Soldier-Red_6: -1211479255
+      Soldier-Red_60: 235243210
+      Soldier-Red_61: 2111489746
+      Soldier-Red_62: 1161762014
+      Soldier-Red_63: 864179698
+      Soldier-Red_64: -75775819
+      Soldier-Red_65: -2074163503
+      Soldier-Red_66: -568682469
+      Soldier-Red_67: 82343391
+      Soldier-Red_68: -177382921
+      Soldier-Red_69: -1388824638
+      Soldier-Red_7: -1361566715
+      Soldier-Red_70: -1207515112
+      Soldier-Red_71: 507130671
+      Soldier-Red_72: 39691595
+      Soldier-Red_73: 2883209
+      Soldier-Red_74: 228771630
+      Soldier-Red_75: 137077071
+      Soldier-Red_76: -1598812779
+      Soldier-Red_77: -2104105930
+      Soldier-Red_78: -418802337
+      Soldier-Red_79: -213702334
+      Soldier-Red_8: 649301586
+      Soldier-Red_80: -1497027281
+      Soldier-Red_81: -1475446695
+      Soldier-Red_82: 2107990416
+      Soldier-Red_83: 512275923
+      Soldier-Red_84: 53005820
+      Soldier-Red_85: -1183894570
+      Soldier-Red_86: 133344369
+      Soldier-Red_87: -632779321
+      Soldier-Red_88: -1866390542
+      Soldier-Red_89: 206345484
+      Soldier-Red_9: -1220640457
+      Soldier-Red_90: 1094881118
+      Soldier-Red_91: -650132998
+      Soldier-Red_92: 1165323478
+      Soldier-Red_93: 998713696
+      Soldier-Red_94: -2140958925
+      Soldier-Red_95: 1739547973
+      Soldier-Red_96: -1904353888
+      Soldier-Red_97: 423186182
+      Soldier-Red_98: -693904041
+      Soldier-Red_99: 1439085584
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
