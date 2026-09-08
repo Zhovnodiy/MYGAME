@@ -51,7 +51,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             targetObject = eventData.pointerCurrentRaycast.gameObject;
         }
 
-        itemSlot targetSlot = targetObject?.GetComponent<itemSlot>();
+        itemSlot targetSlot = targetObject?.GetComponentInParent<itemSlot>();
         if (targetSlot != null && targetSlot != _slot)
         {
             SwapSlots(_slot, targetSlot);

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2047004455216332390}
   - component: {fileID: 8695399595453085763}
   - component: {fileID: 8999478887272099625}
+  - component: {fileID: 5681000135987416209}
   m_Layer: 5
   m_Name: ItemSLot
   m_TagString: Untagged
@@ -93,6 +94,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotType: 0
+  instance:
+    guid: 
+    templateId: 
+    quantity: 1
+    rarity: 0
+    attributes:
+      quality: 0
+      prefixes:
+        strength: 0
+        agility: 0
+        intelligence: 0
+        armour: 0
+      suffixes:
+        coolresist: 0
+        fireresist: 0
+        lightinresist: 0
+        darknessresist: 0
+      hasFixedAttributes: 0
+    itemID: 0
+    itemName: 
+    stack: 1
   slotID: 0
   itemName: 
   quantity: 0
@@ -100,9 +122,18 @@ MonoBehaviour:
   ifFull: 0
   rarity: 0
   attributes:
-    strength: 0
-    agility: 0
-    intelligence: 0
+    quality: 0
+    prefixes:
+      strength: 0
+      agility: 0
+      intelligence: 0
+      armour: 0
+    suffixes:
+      coolresist: 0
+      fireresist: 0
+      lightinresist: 0
+      darknessresist: 0
+    hasFixedAttributes: 0
   quantityText: {fileID: 1829368229242390617}
   itemImage: {fileID: 5319038014690071261}
   defaultItemSprite: {fileID: 0}
@@ -110,6 +141,40 @@ MonoBehaviour:
   SELECTEDsHADER: {fileID: 5031406685568078112}
   thisItemSelected: 0
   maxNamberOfItem: 9
+  itemType: 0
+  itemDescription: 
+  itemData:
+    itemID: 
+    itemName: 
+    quantity: 0
+    rarity: 0
+    attributes:
+      quality: 0
+      prefixes:
+        strength: 0
+        agility: 0
+        intelligence: 0
+        armour: 0
+      suffixes:
+        coolresist: 0
+        fireresist: 0
+        lightinresist: 0
+        darknessresist: 0
+      hasFixedAttributes: 0
+    typeItem: 0
+    description: 
+--- !u!225 &5681000135987416209
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939321379553461116}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4338853337199909744
 GameObject:
   m_ObjectHideFlags: 0

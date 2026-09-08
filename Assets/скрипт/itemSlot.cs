@@ -459,12 +459,13 @@ public class itemSlot : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler
             Debug.Log("Цей слот не є слотом екіпірування.");
         }
         thisItemSelected = false; // 04 11 до цього працювало норм
-
-        if (quantity > 0)
-        {
-            // Викинути всю кількість
-            inventoryManager.DropItem(this, quantity);
-        }
+        
+        // Видаляємо цей рядок, бо тепер drag & drop обробляє переміщення
+        // if (quantity > 0)
+        // {
+        //     // Викинути всю кількість
+        //     inventoryManager.DropItem(this, quantity);
+        // }
     }
     public void LogItemInfo()
     {

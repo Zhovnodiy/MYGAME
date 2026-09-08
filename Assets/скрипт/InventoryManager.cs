@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -244,30 +245,7 @@ public class InventoryManager : MonoBehaviour
         return true;
     }
 
-    public void UnequipItem(itemSlot targetSlot)
-    {
-        if (targetSlot == null || !ItemInstance.IsReal(targetSlot.instance))
-        {
-            return;
-        }
-
-        ItemInstance equippedInstance = targetSlot.instance;
-        int leftOver = AddItem(equippedInstance);
-        if (leftOver > 0)
-        {
-            Debug.Log("Cannot unequip item because the inventory is full.");
-            return;
-        }
-
-        PlayerStatsUI playerStatsUI = FindObjectOfType<PlayerStatsUI>();
-        if (playerStatsUI != null)
-        {
-            playerStatsUI.UpdateStats(equippedInstance.attributes, false);
-        }
-
-        targetSlot.Clear();
-        Debug.Log("Unequipped item into inventory.");
-    }
+ 
 
     public void DropItem(itemSlot slot, int quantityToDrop)
     {
@@ -368,15 +346,15 @@ public class InventoryManager : MonoBehaviour
 
         if (currencyName.Contains("chaos") || currencyName.Contains("хаос"))
         {
-            targetInstance.attributes.prefixes.strength = Random.Range(1, 15);
-            targetInstance.attributes.prefixes.agility = Random.Range(1, 15);
-            targetInstance.attributes.prefixes.intelligence = Random.Range(1, 15);
-            targetInstance.attributes.prefixes.armour = Random.Range(5, 50);
-            targetInstance.attributes.suffixes.fireresist = Random.Range(5, 30);
-            targetInstance.attributes.suffixes.coolresist = Random.Range(5, 30);
-            targetInstance.attributes.suffixes.lightinresist = Random.Range(5, 30);
-            targetInstance.attributes.suffixes.darknessresist = Random.Range(5, 30);
-            targetInstance.rarity = (Rarity)Random.Range(0, 4);
+            targetInstance.attributes.prefixes.strength = UnityEngine.Random.Range(1, 15);
+            targetInstance.attributes.prefixes.agility = UnityEngine.Random.Range(1, 15);
+            targetInstance.attributes.prefixes.intelligence = UnityEngine.Random.Range(1, 15);
+            targetInstance.attributes.prefixes.armour = UnityEngine.Random.Range(5, 50);
+            targetInstance.attributes.suffixes.fireresist = UnityEngine.Random.Range(5, 30);
+            targetInstance.attributes.suffixes.coolresist = UnityEngine.Random.Range(5, 30);
+            targetInstance.attributes.suffixes.lightinresist = UnityEngine.Random.Range(5, 30);
+            targetInstance.attributes.suffixes.darknessresist = UnityEngine.Random.Range(5, 30);
+            targetInstance.rarity = (Rarity)UnityEngine.Random.Range(0, 4);
             success = true;
         }
         else if (currencyName.Contains("whetstone") || currencyName.Contains("точиль") || currencyName.Contains("скрап"))
@@ -545,5 +523,60 @@ public class InventoryManager : MonoBehaviour
             source.fireresist,
             source.lightinresist,
             source.darknessresist);
+    }
+
+    public void UnequipItem(itemSlot slot)
+    {
+        // Перевіряємо, чи слот не порожній
+        if (!slot.ifFull)
+        {
+            Debug.Log("Слот порожній. Немає предмета для зняття.");
+            return;
+        }
+
+        // Створюємо новий ItemInstance для додавання в інвентар
+        ItemSO template = EnsureCatalog().GetTemplate(slot.itemName);
+        if (template == null)
+        {
+            Debug.LogError("Не вдалося знайти шаблон предмета для зняття.");
+            return;
+        }
+
+        // Створюємо екземпляр предмета з тими самими атрибутами
+        ItemInstance newItemInstance = new ItemInstance
+        {
+            guid = Guid.NewGuid().ToString("N"),
+            templateId = slot.itemName,
+            quantity = 1,
+            rarity = slot.rarity,
+            attributes = slot.attributes,
+            
+            // Копіюємо значення з старого екземпляра для сумісності
+            itemName = slot.itemName,
+            stack = 1
+        };
+
+        // Додаємо предмет у інвентар
+        int remaining = AddItem(newItemInstance);
+        
+        // Якщо не вдалося додати всі предмети (інвентар заповнений)
+        if (remaining > 0)
+        {
+            Debug.Log("Інвентар заповнений. Предмет залишився у слоті екіпірування.");
+            return;
+        }
+
+        // Віднімаємо атрибути від гравця
+        PlayerStats playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        if (playerStats != null)
+        {
+            playerStats.strength -= slot.attributes.strength;
+            playerStats.agility -= slot.attributes.agility;
+            playerStats.intelligence -= slot.attributes.intelligence;
+            playerStats.armour -= slot.attributes.armour;
+        }
+
+        // Очищуємо слот екіпірування
+        slot.Clear();
     }
 }
