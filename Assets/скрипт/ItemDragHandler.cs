@@ -9,19 +9,23 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     private GameObject _dragIcon;
     private Canvas _canvas;
     private RectTransform _dragIconTransform;
+    private InventoryManager _inventoryManager;
 
     private void Awake()
     {
         _slot = GetComponent<itemSlot>();
         _canvas = GetComponentInParent<Canvas>();
+        _inventoryManager = FindObjectOfType<InventoryManager>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (_slot.quantity == 0) return;
+        if (_slot.quantity <= 0 && !ItemInstance.IsReal(_slot.instance))
+            return;
 
         _dragIcon = new GameObject("Drag Icon");
         _dragIcon.transform.SetParent(_canvas.transform, false);
+
         _dragIconTransform = _dragIcon.AddComponent<RectTransform>();
         _dragIconTransform.sizeDelta = new Vector2(50, 50);
 
@@ -29,7 +33,9 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         image.sprite = _slot.itemsprite;
         image.raycastTarget = false;
 
-        _slot.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        CanvasGroup canvasGroup = _slot.GetComponent<CanvasGroup>();
+        if (canvasGroup != null)
+            canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -40,47 +46,150 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (_dragIcon == null) return;
+        if (_dragIcon == null)
+            return;
 
-        _slot.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        CanvasGroup canvasGroup = _slot.GetComponent<CanvasGroup>();
+        if (canvasGroup != null)
+            canvasGroup.blocksRaycasts = true;
+
         Destroy(_dragIcon);
+        _dragIcon = null;
+
+        if (_inventoryManager == null)
+            _inventoryManager = FindObjectOfType<InventoryManager>();
 
         GameObject targetObject = null;
+
         if (eventData.pointerCurrentRaycast.isValid)
-        {
             targetObject = eventData.pointerCurrentRaycast.gameObject;
-        }
 
         itemSlot targetSlot = targetObject?.GetComponentInParent<itemSlot>();
-        if (targetSlot != null && targetSlot != _slot)
-        {
-            SwapSlots(_slot, targetSlot);
-        }
+
+        if (targetSlot == null || targetSlot == _slot)
+            return;
+
+        SwapSlots(_slot, targetSlot);
     }
 
     private void SwapSlots(itemSlot source, itemSlot target)
     {
-        if (target.slotType == SlotType.Equipment && target.itemName != source.itemName)
+        if (_inventoryManager == null)
         {
-            Debug.Log("This item cannot be moved to that equipment slot.");
+            Debug.LogError("InventoryManager not found.");
             return;
         }
 
-        if (source.HasInstance || target.HasInstance)
+        // =========================================================
+        // 1. INVENTORY -> INVENTORY
+        // =========================================================
+
+        if (source.slotType == SlotType.Inventory &&
+            target.slotType == SlotType.Inventory)
         {
-            SwapInstanceSlots(source, target);
+            if (source.HasInstance || target.HasInstance)
+                SwapInstanceSlots(source, target);
+            else
+                SwapLegacySlots(source, target);
+
             return;
         }
 
-        SwapLegacySlots(source, target);
+        // =========================================================
+        // 2. INVENTORY -> EQUIPMENT
+        // =========================================================
+
+        if (source.slotType == SlotType.Inventory &&
+            target.slotType == SlotType.Equipment)
+        {
+            if (!CanEquipToTarget(source, target))
+            {
+                Debug.Log(
+                    $"Cannot equip {source.GetDisplayName()} " +
+                    $"into equipment slot {target.slotID}."
+                );
+
+                return;
+            }
+
+            bool equipped = _inventoryManager.EquipItem(source);
+
+            if (!equipped)
+            {
+                Debug.LogWarning("EquipItem failed.");
+            }
+
+            return;
+        }
+
+        // =========================================================
+        // 3. EQUIPMENT -> INVENTORY
+        // =========================================================
+
+        if (source.slotType == SlotType.Equipment &&
+            target.slotType == SlotType.Inventory)
+        {
+            if (target.quantity > 0 || ItemInstance.IsReal(target.instance))
+            {
+                Debug.Log("Target inventory slot is occupied.");
+                return;
+            }
+
+            _inventoryManager.UnequipItemToSlot(source, target);
+            return;
+        }
+
+        // =========================================================
+        // 4. EQUIPMENT -> EQUIPMENT
+        // =========================================================
+
+        if (source.slotType == SlotType.Equipment &&
+            target.slotType == SlotType.Equipment)
+        {
+            Debug.Log("Equipment -> Equipment is not supported.");
+            return;
+        }
+    }
+
+    private bool CanEquipToTarget(itemSlot source, itemSlot target)
+    {
+        if (!ItemInstance.IsReal(source.instance))
+            return false;
+
+        TypeItem type = source.GetDisplayItemType();
+
+        switch (type)
+        {
+            case TypeItem.Helmet:
+                return target == _inventoryManager.helmetSlot;
+
+            case TypeItem.Chest:
+                return target == _inventoryManager.chestSlot;
+
+            case TypeItem.Legs:
+                return target == _inventoryManager.legsSlot;
+
+            case TypeItem.Boots:
+                return target == _inventoryManager.bootsSlot;
+
+            default:
+                return false;
+        }
     }
 
     private static void SwapInstanceSlots(itemSlot source, itemSlot target)
     {
-        bool targetIsEmpty = target.quantity == 0;
-        if (!source.HasInstance || (!target.HasInstance && !targetIsEmpty))
+        bool targetIsEmpty =
+            !ItemInstance.IsReal(target.instance) &&
+            target.quantity <= 0;
+
+        if (!source.HasInstance ||
+            (!target.HasInstance && !targetIsEmpty))
         {
-            Debug.LogWarning("Cannot mix ItemInstance data with a populated legacy slot during this migration stage.");
+            Debug.LogWarning(
+                "Cannot mix ItemInstance data with a populated legacy slot."
+            );
+
             return;
         }
 
@@ -88,16 +197,16 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         ItemInstance targetInstance = target.instance;
 
         target.SetInstance(sourceInstance);
-        if (targetInstance != null)
-        {
-            source.SetInstance(targetInstance);
-        }
-        else
-        {
-            source.Clear();
-        }
 
-        Debug.Log($"Moved ItemInstance '{sourceInstance.templateId}' to slot {target.slotID}.");
+        if (ItemInstance.IsReal(targetInstance))
+            source.SetInstance(targetInstance);
+        else
+            source.Clear();
+
+        Debug.Log(
+            $"Moved ItemInstance '{sourceInstance.templateId}' " +
+            $"to slot {target.slotID}."
+        );
     }
 
     private static void SwapLegacySlots(itemSlot source, itemSlot target)
@@ -120,6 +229,8 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         source.rarity = tempRarity;
         source.attributes = tempAttributes;
 
-        Debug.Log($"Moved {target.itemName} to slot {target.slotID}.");
+        Debug.Log(
+            $"Moved {target.itemName} to slot {target.slotID}."
+        );
     }
 }

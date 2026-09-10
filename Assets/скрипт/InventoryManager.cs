@@ -525,6 +525,72 @@ public class InventoryManager : MonoBehaviour
             source.darknessresist);
     }
 
+    public void UnequipItemToSlot(itemSlot sourceSlot, itemSlot targetSlot)
+    {
+        if (sourceSlot == null || targetSlot == null)
+        {
+            Debug.LogError("UnequipItemToSlot: source or target is null.");
+            return;
+        }
+
+        if (!ItemInstance.IsReal(sourceSlot.instance))
+        {
+            Debug.LogWarning("Equipment slot has no valid ItemInstance.");
+            return;
+        }
+
+        if (targetSlot.slotType != SlotType.Inventory)
+        {
+            Debug.LogWarning("Target slot is not an inventory slot.");
+            return;
+        }
+
+        if (targetSlot.quantity > 0 || ItemInstance.IsReal(targetSlot.instance))
+        {
+            Debug.LogWarning("Target inventory slot is occupied.");
+            return;
+        }
+
+        ItemInstance equippedInstance = sourceSlot.instance;
+
+        // Кладемо саме цей ItemInstance у конкретний target slot.
+        targetSlot.slotType = SlotType.Inventory;
+        targetSlot.SetInstance(equippedInstance);
+
+        // Знімаємо стати
+        PlayerStats playerStats =
+            GameObject.FindGameObjectWithTag("Player")
+            ?.GetComponent<PlayerStats>();
+
+        if (playerStats != null && equippedInstance.attributes != null)
+        {
+            playerStats.strength -= equippedInstance.attributes.strength;
+            playerStats.agility -= equippedInstance.attributes.agility;
+            playerStats.intelligence -= equippedInstance.attributes.intelligence;
+            playerStats.armour -= equippedInstance.attributes.armour;
+        }
+
+        PlayerStatsUI playerStatsUI = FindObjectOfType<PlayerStatsUI>();
+
+        if (playerStatsUI != null && equippedInstance.attributes != null)
+        {
+            playerStatsUI.UpdateStats(equippedInstance.attributes, false);
+        }
+
+        // Очищаємо equipment slot
+        sourceSlot.Clear();
+
+        Debug.Log(
+            $"Unequipped '{equippedInstance.templateId}' " +
+            $"to inventory slot {targetSlot.slotID}."
+        );
+    }
+
+
+
+
+
+
     public void UnequipItem(itemSlot slot)
     {
         // Перевіряємо, чи слот не порожній
