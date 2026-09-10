@@ -1,6 +1,6 @@
 using UnityEngine;
 using System;
-
+using System.Collections.Generic;
 public class InventoryManager : MonoBehaviour
 {
     public GameObject InventoryMenu;
@@ -36,6 +36,18 @@ public class InventoryManager : MonoBehaviour
             InventoryMenu.SetActive(true);
             MenuActivate = true;
         }
+        // ТЕСТ SAVE
+        if (Input.GetKeyDown(KeyCode.F5))
+        {
+            SaveInventory();
+        }
+
+        // ТЕСТ LOAD
+        if (Input.GetKeyDown(KeyCode.F9))
+        {
+            LoadInventory();
+        }
+
     }
 
     // Canonical add path for new code.
@@ -644,5 +656,320 @@ public class InventoryManager : MonoBehaviour
 
         // Очищуємо слот екіпірування
         slot.Clear();
+    }
+    ////////////як рукі дойдуть допилить систему збереження інвентаря/////////////// DIFF 239 GR 2///////////////////////////////////////////////
+
+    // ============================================================
+    // SAVE / LOAD INVENTORY
+    // ============================================================
+
+    [Serializable]
+    private class InventorySaveData
+    {
+        public List<SlotSaveData> inventory;
+        public SlotSaveData helmet;
+        public SlotSaveData chest;
+        public SlotSaveData legs;
+        public SlotSaveData boots;
+    }
+
+    [Serializable]
+    private class SlotSaveData
+    {
+        public int slotID;
+        public bool hasItem;
+
+        public string guid;
+        public string templateId;
+        public string itemName;
+
+        public int quantity;
+        public int stack;
+
+        public Rarity rarity;
+
+        public int strength;
+        public int agility;
+        public int intelligence;
+        public int armour;
+        public int quality;
+
+        public int fireresist;
+        public int coolresist;
+        public int lightinresist;
+        public int darknessresist;
+    }
+
+    private string GetInventorySavePath()
+    {
+        return System.IO.Path.Combine(
+            Application.persistentDataPath,
+            "inventory_save.json"
+        );
+    }
+
+    public void SaveInventory()
+    {
+        InventorySaveData saveData = new InventorySaveData
+        {
+            inventory = new List<SlotSaveData>()
+        };
+
+        // -----------------------------
+        // Inventory slots
+        // -----------------------------
+
+        for (int i = 0; i < itemSlot.Length; i++)
+        {
+            if (itemSlot[i] == null)
+                continue;
+
+            saveData.inventory.Add(CreateSlotSaveData(itemSlot[i]));
+        }
+
+        // -----------------------------
+        // Equipment
+        // -----------------------------
+
+        saveData.helmet = CreateSlotSaveData(helmetSlot);
+        saveData.chest = CreateSlotSaveData(chestSlot);
+        saveData.legs = CreateSlotSaveData(legsSlot);
+        saveData.boots = CreateSlotSaveData(bootsSlot);
+
+        string json = JsonUtility.ToJson(saveData, true);
+
+        System.IO.File.WriteAllText(
+            GetInventorySavePath(),
+            json
+        );
+
+        Debug.Log($"Inventory saved: {GetInventorySavePath()}");
+    }
+
+    private SlotSaveData CreateSlotSaveData(itemSlot slot)
+    {
+        if (slot == null)
+            return null;
+
+        SlotSaveData data = new SlotSaveData
+        {
+            slotID = slot.slotID,
+            hasItem = ItemInstance.IsReal(slot.instance)
+        };
+
+        if (!data.hasItem)
+            return data;
+
+        ItemInstance instance = slot.instance;
+
+        data.guid = instance.guid;
+        data.templateId = instance.templateId;
+        data.itemName = instance.itemName;
+
+        data.quantity = instance.quantity;
+        data.stack = instance.stack;
+
+        data.rarity = instance.rarity;
+
+        if (instance.attributes != null)
+        {
+            data.strength = instance.attributes.strength;
+            data.agility = instance.attributes.agility;
+            data.intelligence = instance.attributes.intelligence;
+            data.armour = instance.attributes.armour;
+            data.quality = instance.attributes.quality;
+
+            data.fireresist = instance.attributes.fireresist;
+            data.coolresist = instance.attributes.coolresist;
+            data.lightinresist = instance.attributes.lightinresist;
+            data.darknessresist = instance.attributes.darknessresist;
+        }
+
+        return data;
+    }
+
+    public void LoadInventory()
+    {
+        string path = GetInventorySavePath();
+
+        if (!System.IO.File.Exists(path))
+        {
+            Debug.Log("Inventory save file not found. Nothing to load.");
+            return;
+        }
+
+        string json = System.IO.File.ReadAllText(path);
+
+        if (string.IsNullOrWhiteSpace(json))
+        {
+            Debug.LogWarning("Inventory save file is empty.");
+            return;
+        }
+
+        InventorySaveData saveData;
+
+        try
+        {
+            saveData = JsonUtility.FromJson<InventorySaveData>(json);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Failed to read inventory save: {e}");
+            return;
+        }
+
+        if (saveData == null)
+        {
+            Debug.LogError("Inventory save data is null.");
+            return;
+        }
+
+        // -----------------------------
+        // Clear current inventory
+        // -----------------------------
+
+        for (int i = 0; i < itemSlot.Length; i++)
+        {
+            if (itemSlot[i] != null)
+                itemSlot[i].Clear();
+        }
+
+        // -----------------------------
+        // Clear equipment
+        // -----------------------------
+
+        if (helmetSlot != null)
+            helmetSlot.Clear();
+
+        if (chestSlot != null)
+            chestSlot.Clear();
+
+        if (legsSlot != null)
+            legsSlot.Clear();
+
+        if (bootsSlot != null)
+            bootsSlot.Clear();
+
+        // -----------------------------
+        // Restore inventory
+        // -----------------------------
+
+        if (saveData.inventory != null)
+        {
+            foreach (SlotSaveData slotData in saveData.inventory)
+            {
+                RestoreInventorySlot(slotData);
+            }
+        }
+
+        // -----------------------------
+        // Restore equipment
+        // -----------------------------
+
+        RestoreEquipmentSlot(helmetSlot, saveData.helmet);
+        RestoreEquipmentSlot(chestSlot, saveData.chest);
+        RestoreEquipmentSlot(legsSlot, saveData.legs);
+        RestoreEquipmentSlot(bootsSlot, saveData.boots);
+
+        Debug.Log("Inventory loaded.");
+    }
+
+    private void RestoreInventorySlot(SlotSaveData data)
+    {
+        if (data == null || !data.hasItem)
+            return;
+
+        itemSlot targetSlot = FindInventorySlotById(data.slotID);
+
+        if (targetSlot == null)
+        {
+            Debug.LogWarning(
+                $"Inventory slot with ID {data.slotID} not found."
+            );
+
+            return;
+        }
+
+        ItemInstance instance = CreateItemInstanceFromSave(data);
+
+        if (instance == null)
+            return;
+
+        targetSlot.slotType = SlotType.Inventory;
+        targetSlot.SetInstance(instance);
+    }
+
+    private void RestoreEquipmentSlot(
+        itemSlot targetSlot,
+        SlotSaveData data)
+    {
+        if (targetSlot == null || data == null || !data.hasItem)
+            return;
+
+        ItemInstance instance = CreateItemInstanceFromSave(data);
+
+        if (instance == null)
+            return;
+
+        instance.quantity = 1;
+        instance.stack = 1;
+
+        targetSlot.slotType = SlotType.Equipment;
+        targetSlot.SetInstance(instance);
+    }
+
+    private ItemInstance CreateItemInstanceFromSave(SlotSaveData data)
+    {
+        if (string.IsNullOrWhiteSpace(data.templateId))
+        {
+            Debug.LogWarning("Saved item has no templateId.");
+            return null;
+        }
+
+        ItemCatalog catalog = EnsureCatalog();
+
+        if (!catalog.TryGetTemplate(
+                data.templateId,
+                out ItemSO template))
+        {
+            Debug.LogError(
+                $"Cannot load item. Template '{data.templateId}' not found."
+            );
+
+            return null;
+        }
+
+        ItemAttributes attributes = new ItemAttributes(
+            data.strength,
+            data.agility,
+            data.intelligence,
+            data.armour,
+            data.quality,
+            data.coolresist,
+            data.fireresist,
+            data.lightinresist,
+            data.darknessresist
+        );
+
+        ItemInstance instance = new ItemInstance
+        {
+            guid = string.IsNullOrWhiteSpace(data.guid)
+                ? Guid.NewGuid().ToString("N")
+                : data.guid,
+
+            templateId = data.templateId,
+
+            itemName = data.itemName,
+
+            quantity = Mathf.Max(1, data.quantity),
+
+            stack = Mathf.Max(1, data.stack),
+
+            rarity = data.rarity,
+
+            attributes = attributes
+        };
+
+        return instance;
     }
 }
