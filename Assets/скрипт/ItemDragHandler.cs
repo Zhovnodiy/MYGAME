@@ -50,24 +50,86 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             return;
 
         CanvasGroup canvasGroup = _slot.GetComponent<CanvasGroup>();
+
         if (canvasGroup != null)
             canvasGroup.blocksRaycasts = true;
-
-        Destroy(_dragIcon);
-        _dragIcon = null;
-
-        if (_inventoryManager == null)
-            _inventoryManager = FindObjectOfType<InventoryManager>();
 
         GameObject targetObject = null;
 
         if (eventData.pointerCurrentRaycast.isValid)
             targetObject = eventData.pointerCurrentRaycast.gameObject;
 
-        itemSlot targetSlot = targetObject?.GetComponentInParent<itemSlot>();
+        itemSlot targetSlot = null;
 
-        if (targetSlot == null || targetSlot == _slot)
+        if (targetObject != null)
+            targetSlot = targetObject.GetComponentInParent<itemSlot>();
+
+        // Видаляємо візуальну іконку перетягування
+        Destroy(_dragIcon);
+        _dragIcon = null;
+
+        if (_inventoryManager == null)
+            _inventoryManager = FindObjectOfType<InventoryManager>();
+
+        // ---------------------------------------------------------
+        // DROP НЕ НА СЛОТ
+        // ---------------------------------------------------------
+
+        if (targetSlot == null)
+        {
+            Debug.Log("Item returned: drop was outside an item slot.");
             return;
+        }
+
+        // Не можна перетягнути предмет сам на себе
+        if (targetSlot == _slot)
+        {
+            Debug.Log("Item returned: same slot.");
+            return;
+        }
+
+        // ---------------------------------------------------------
+        // Перевіряємо, що targetSlot справді є одним із наших слотів
+        // ---------------------------------------------------------
+
+        bool isValidSlot = false;
+
+        // Inventory slots
+        if (_inventoryManager != null &&
+            _inventoryManager.itemSlot != null)
+        {
+            foreach (itemSlot inventorySlot in _inventoryManager.itemSlot)
+            {
+                if (inventorySlot == targetSlot)
+                {
+                    isValidSlot = true;
+                    break;
+                }
+            }
+        }
+
+        // Equipment slots
+        if (!isValidSlot && _inventoryManager != null)
+        {
+            if (targetSlot == _inventoryManager.helmetSlot ||
+                targetSlot == _inventoryManager.chestSlot ||
+                targetSlot == _inventoryManager.legsSlot ||
+                targetSlot == _inventoryManager.bootsSlot)
+            {
+                isValidSlot = true;
+            }
+        }
+
+        // Якщо це просто рамка, фон або інший UI-об'єкт
+        if (!isValidSlot)
+        {
+            Debug.Log("Item returned: invalid drop target.");
+            return;
+        }
+
+        // ---------------------------------------------------------
+        // Нормальний drop
+        // ---------------------------------------------------------
 
         SwapSlots(_slot, targetSlot);
     }

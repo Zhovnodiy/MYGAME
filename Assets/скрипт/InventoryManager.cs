@@ -20,6 +20,7 @@ public class InventoryManager : MonoBehaviour
         {
             itemSlot[i].slotID = i;
         }
+        LoadInventory();
     }
 
     private void Update()
@@ -48,6 +49,10 @@ public class InventoryManager : MonoBehaviour
             LoadInventory();
         }
 
+    }
+    private void OnApplicationQuit()
+    {
+        SaveInventory();
     }
 
     // Canonical add path for new code.
@@ -698,6 +703,11 @@ public class InventoryManager : MonoBehaviour
         public int coolresist;
         public int lightinresist;
         public int darknessresist;
+
+
+        public TypeItem typeItem;
+        public string itemDescription;
+        public string spriteName;
     }
 
     private string GetInventorySavePath()
@@ -748,6 +758,7 @@ public class InventoryManager : MonoBehaviour
 
     private SlotSaveData CreateSlotSaveData(itemSlot slot)
     {
+
         if (slot == null)
             return null;
 
@@ -770,7 +781,12 @@ public class InventoryManager : MonoBehaviour
         data.stack = instance.stack;
 
         data.rarity = instance.rarity;
+        data.typeItem = slot.GetDisplayItemType();
+        data.itemDescription = slot.GetDisplayDescription();
 
+        data.spriteName = slot.itemsprite != null
+    ? slot.itemsprite.name
+    : "";
         if (instance.attributes != null)
         {
             data.strength = instance.attributes.strength;
@@ -861,7 +877,22 @@ public class InventoryManager : MonoBehaviour
                 RestoreInventorySlot(slotData);
             }
         }
+        PlayerStatsUI playerStatsUI = FindObjectOfType<PlayerStatsUI>();
 
+        if (playerStatsUI != null)
+        {
+            if (helmetSlot != null && ItemInstance.IsReal(helmetSlot.instance))
+                playerStatsUI.UpdateStats(helmetSlot.instance.attributes, false);
+
+            if (chestSlot != null && ItemInstance.IsReal(chestSlot.instance))
+                playerStatsUI.UpdateStats(chestSlot.instance.attributes, false);
+
+            if (legsSlot != null && ItemInstance.IsReal(legsSlot.instance))
+                playerStatsUI.UpdateStats(legsSlot.instance.attributes, false);
+
+            if (bootsSlot != null && ItemInstance.IsReal(bootsSlot.instance))
+                playerStatsUI.UpdateStats(bootsSlot.instance.attributes, false);
+        }
         // -----------------------------
         // Restore equipment
         // -----------------------------
@@ -897,6 +928,13 @@ public class InventoryManager : MonoBehaviour
 
         targetSlot.slotType = SlotType.Inventory;
         targetSlot.SetInstance(instance);
+
+        PlayerStatsUI playerStatsUI = FindObjectOfType<PlayerStatsUI>();
+
+        if (playerStatsUI != null && instance.attributes != null)
+        {
+            playerStatsUI.UpdateStats(instance.attributes, true);
+        }
     }
 
     private void RestoreEquipmentSlot(
@@ -920,6 +958,12 @@ public class InventoryManager : MonoBehaviour
 
     private ItemInstance CreateItemInstanceFromSave(SlotSaveData data)
     {
+        if (data == null)
+        {
+            Debug.LogWarning("Saved item data is null.");
+            return null;
+        }
+
         if (string.IsNullOrWhiteSpace(data.templateId))
         {
             Debug.LogWarning("Saved item has no templateId.");
@@ -928,16 +972,71 @@ public class InventoryManager : MonoBehaviour
 
         ItemCatalog catalog = EnsureCatalog();
 
-        if (!catalog.TryGetTemplate(
-                data.templateId,
-                out ItemSO template))
+        ItemSO template = null;
+
+        // ----------------------------------------------------
+        // 1. Спочатку пробуємо знайти нормальний ItemSO
+        // ----------------------------------------------------
+
+        if (catalog.TryGetTemplate(data.templateId, out template))
         {
-            Debug.LogError(
-                $"Cannot load item. Template '{data.templateId}' not found."
+            // Звичайний ItemSO знайдений.
+        }
+        else
+        {
+            // ------------------------------------------------
+            // 2. Старий legacy-предмет
+            // ------------------------------------------------
+
+            Debug.LogWarning(
+                $"Template '{data.templateId}' not found. " +
+                $"Creating runtime legacy template for '{data.itemName}'."
             );
 
-            return null;
+            ItemAttributes recoveredAttributes = new ItemAttributes(
+                data.strength,
+                data.agility,
+                data.intelligence,
+                data.armour,
+                data.quality,
+                data.coolresist,
+                data.fireresist,
+                data.lightinresist,
+                data.darknessresist
+            );
+
+            Sprite savedSprite = null;
+
+            if (ItemSpriteCatalog.Instance != null)
+            {
+                savedSprite = ItemSpriteCatalog.Instance.GetSprite(data.spriteName);
+            }
+            template = catalog.GetOrCreateLegacyTemplate(
+                data.itemName,
+                data.itemDescription,
+                savedSprite,
+                data.typeItem,
+                data.rarity,
+                recoveredAttributes,
+                1
+            );
+
+            if (template == null)
+            {
+                Debug.LogError(
+                    $"Failed to create legacy template for '{data.itemName}'."
+                );
+
+                return null;
+            }
+
+            // Додаємо створений runtime template у каталог уже зроблено
+            // всередині GetOrCreateLegacyTemplate().
         }
+
+        // ----------------------------------------------------
+        // 3. Відновлюємо атрибути
+        // ----------------------------------------------------
 
         ItemAttributes attributes = new ItemAttributes(
             data.strength,
@@ -951,15 +1050,24 @@ public class InventoryManager : MonoBehaviour
             data.darknessresist
         );
 
+        // ----------------------------------------------------
+        // 4. Створюємо ItemInstance
+        // ----------------------------------------------------
+
         ItemInstance instance = new ItemInstance
         {
             guid = string.IsNullOrWhiteSpace(data.guid)
                 ? Guid.NewGuid().ToString("N")
                 : data.guid,
 
-            templateId = data.templateId,
+            // ВАЖЛИВО:
+            // Для legacy template це буде саме його legacyId,
+            // який GetOrCreateLegacyTemplate() додав у каталог.
+            templateId = template.templateId,
 
-            itemName = data.itemName,
+            itemName = string.IsNullOrWhiteSpace(data.itemName)
+                ? template.itemName
+                : data.itemName,
 
             quantity = Mathf.Max(1, data.quantity),
 
@@ -971,5 +1079,26 @@ public class InventoryManager : MonoBehaviour
         };
 
         return instance;
+    }
+    private TypeItem GetTypeItemFromLegacySave(SlotSaveData data)
+    {
+        if (data == null)
+            return TypeItem.Misc;
+
+        string itemName = data.itemName?.ToLowerInvariant() ?? "";
+
+        if (itemName.Contains("helmet") || itemName.Contains("шолом"))
+            return TypeItem.Helmet;
+
+        if (itemName.Contains("chest") || itemName.Contains("armor") || itemName.Contains("брон"))
+            return TypeItem.Chest;
+
+        if (itemName.Contains("legs") || itemName.Contains("pants") || itemName.Contains("ног"))
+            return TypeItem.Legs;
+
+        if (itemName.Contains("boots") || itemName.Contains("черев"))
+            return TypeItem.Boots;
+
+        return TypeItem.Misc;
     }
 }
